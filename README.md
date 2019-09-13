@@ -19,6 +19,8 @@ $ npm install --save redux-persist
 
 ## Usage
 
+Simple demo:
+
 ```js
 import { createStore, applyMiddleware } from 'redux';
 import persistent, { hydrate } from 'redux-persistent';
@@ -37,6 +39,14 @@ const store = createStore(reducer, initialState, applyMiddleware(
 
 store.dispatch(hydrate());
 ```
+
+This module relies on ES6 `Symbol`, so it needs to be polyfilled in environments where it is not supported. For example:
+
+```
+import 'core-js/features/symbol';
+```
+
+Or if using `rollup`, you can use [rollup-plugin-polyfill](https://www.npmjs.com/package/rollup-plugin-polyfill).
 
 # API
 
