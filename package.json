@@ -1,0 +1,58 @@
+{
+  "name": "redux-persistent",
+  "version": "1.0.0",
+  "description": "Redux middleware for persisting and hydrating state",
+  "main": "dist/react-persistent.cjs.js",
+  "module": "dist/react-persistent.esm.js",
+  "scripts": {
+    "lint": "eslint 'src/*.js' 'test/*.js?(x)'",
+    "pretest": "npm run lint",
+    "test": "NODE_ENV=test mocha",
+    "cover": "NODE_ENV=test nyc npm test",
+    "coveralls": "npm run cover && nyc report --reporter=text-lcov | coveralls",
+    "build": "rollup -c",
+    "prepare": "npm run test && npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perrin4869/redux-persistent.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "persist",
+    "localstorage"
+  ],
+  "author": "Julian Grinblat <julian@dotcore.co.il>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perrin4869/redux-persistent/issues"
+  },
+  "homepage": "https://github.com/perrin4869/redux-persistent#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "babel-plugin-istanbul": "^5.2.0",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha": "^6.1.0",
+    "mocha": "^6.2.0",
+    "mock-local-storage": "^1.1.8",
+    "nyc": "^14.1.1",
+    "redux": "^4.0.4",
+    "redux-mock-store": "^1.5.3",
+    "redux-persist-node-storage": "^2.0.0",
+    "rollup": "^1.21.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.1",
+    "sinon": "^7.4.2"
+  },
+  "dependencies": {}
+}
