@@ -1,6 +1,6 @@
 {
   "name": "redux-persistent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redux middleware for persisting and hydrating state",
   "main": "dist/redux-persistent.cjs.js",
   "module": "dist/redux-persistent.esm.js",
