@@ -14,7 +14,7 @@ Install the package using:
 
 ```
 # npm package
-$ npm install --save redux-persist
+$ npm install --save redux-persistent
 ```
 
 ## Usage
