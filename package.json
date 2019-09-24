@@ -2,8 +2,8 @@
   "name": "redux-persistent",
   "version": "1.0.0",
   "description": "Redux middleware for persisting and hydrating state",
-  "main": "dist/react-persistent.cjs.js",
-  "module": "dist/react-persistent.esm.js",
+  "main": "dist/redux-persistent.cjs.js",
+  "module": "dist/redux-persistent.esm.js",
   "scripts": {
     "lint": "eslint 'src/*.js' 'test/*.js?(x)'",
     "pretest": "npm run lint",
