@@ -10,6 +10,6 @@ npm-debug.log
 # Build
 dist
 
-.nyc_output
-
 test/storage
+
+.eslintcache

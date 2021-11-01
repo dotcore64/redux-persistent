@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true
+  },
+  "overrides": [
+    {
+      "files": ["test/{,**}/*.js?(x)"],
+      "extends": ["plugin:mocha/recommended"],
+      "plugins": ["mocha"],
+      "env": {
+        "mocha": true
+      },
+      "rules": {
+        "mocha/no-mocha-arrows": 0
+      }
+    }
+  ]
+}
