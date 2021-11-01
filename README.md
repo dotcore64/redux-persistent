@@ -98,8 +98,8 @@ An action creator to remove a stored item from the provided storage.
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 
 
-[build-badge]: https://img.shields.io/travis/perrin4869/redux-persistent/master.svg?style=flat-square
-[build]: https://travis-ci.org/perrin4869/redux-persistent
+[build-badge]: https://img.shields.io/github/workflow/status/dotcore64/redux-persistent/test/master?style=flat-square
+[build]: https://github.com/dotcore64/redux-persistent/actions
 
 [npm-badge]: https://img.shields.io/npm/v/redux-persistent.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/redux-persistent

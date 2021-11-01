@@ -1,10 +1,10 @@
-import { join } from 'path';
-import { stub } from 'sinon';
-import { expect } from 'chai';
-import configureStore from 'redux-mock-store';
-import { AsyncNodeStorage } from 'redux-persist-node-storage';
+const { join } = require('path');
+const { stub } = require('sinon');
+const { expect } = require('chai');
+const configureStore = require('redux-mock-store').default;
+const { AsyncNodeStorage } = require('redux-persist-node-storage');
 
-import persistent, { remove, hydrate } from '../src';
+const { default: persistent, remove, hydrate } = require('..');
 
 const getMockStore = (selectors, storage) => configureStore([
   persistent(selectors, { storage }),

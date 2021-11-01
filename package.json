@@ -5,13 +5,11 @@
   "main": "dist/redux-persistent.cjs.js",
   "module": "dist/redux-persistent.esm.js",
   "scripts": {
-    "lint": "eslint 'src/*.js' 'test/*.js?(x)'",
-    "pretest": "npm run lint",
-    "test": "NODE_ENV=test mocha",
-    "cover": "NODE_ENV=test nyc npm test",
-    "coveralls": "npm run cover && nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint --cache .",
+    "test": "mocha",
+    "cover": "c8 npm test",
     "build": "rollup -c",
-    "prepare": "npm run test && npm run build"
+    "prepare": "npm run build"
   },
   "files": [
     "dist"
@@ -33,26 +31,22 @@
   },
   "homepage": "https://github.com/perrin4869/redux-persistent#readme",
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "@babel/register": "^7.6.0",
-    "babel-plugin-istanbul": "^5.2.0",
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.6",
-    "eslint": "^6.3.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-mocha": "^6.1.0",
-    "mocha": "^6.2.0",
-    "mock-local-storage": "^1.1.8",
-    "nyc": "^14.1.1",
-    "redux": "^4.0.4",
-    "redux-mock-store": "^1.5.3",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "c8": "^7.10.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-mocha": "^9.0.0",
+    "mocha": "^9.1.3",
+    "mock-local-storage": "^1.1.17",
+    "redux": "^4.1.2",
+    "redux-mock-store": "^1.5.4",
     "redux-persist-node-storage": "^2.0.0",
-    "rollup": "^1.21.2",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-terser": "^5.1.1",
-    "sinon": "^7.4.2"
-  },
-  "dependencies": {}
+    "rollup": "^2.59.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sinon": "^11.1.2"
+  }
 }
