@@ -104,11 +104,11 @@ See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 [npm-badge]: https://img.shields.io/npm/v/redux-persistent.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/redux-persistent
 
-[coveralls-badge]: https://img.shields.io/coveralls/perrin4869/redux-persistent/master.svg?style=flat-square
-[coveralls]: https://coveralls.io/r/perrin4869/redux-persistent
+[coveralls-badge]: https://img.shields.io/coveralls/dotcore64/redux-persistent/master.svg?style=flat-square
+[coveralls]: https://coveralls.io/r/dotcore64/redux-persistent
 
-[dependency-status-badge]: https://david-dm.org/perrin4869/redux-persistent.svg?style=flat-square
-[dependency-status]: https://david-dm.org/perrin4869/redux-persistent
+[dependency-status-badge]: https://david-dm.org/dotcore64/redux-persistent.svg?style=flat-square
+[dependency-status]: https://david-dm.org/dotcore64/redux-persistent
 
-[dev-dependency-status-badge]: https://david-dm.org/perrin4869/redux-persistent/dev-status.svg?style=flat-square
-[dev-dependency-status]: https://david-dm.org/perrin4869/redux-persistent#info=devDependencies
+[dev-dependency-status-badge]: https://david-dm.org/dotcore64/redux-persistent/dev-status.svg?style=flat-square
+[dev-dependency-status]: https://david-dm.org/dotcore64/redux-persistent#info=devDependencies

@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perrin4869/redux-persistent.git"
+    "url": "git+https://github.com/dotcore64/redux-persistent.git"
   },
   "keywords": [
     "redux",
@@ -27,9 +27,9 @@
   "author": "Julian Grinblat <julian@dotcore.co.il>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/perrin4869/redux-persistent/issues"
+    "url": "https://github.com/dotcore64/redux-persistent/issues"
   },
-  "homepage": "https://github.com/perrin4869/redux-persistent#readme",
+  "homepage": "https://github.com/dotcore64/redux-persistent#readme",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
