@@ -1,16 +1,19 @@
-const { join } = require('path');
-const { stub } = require('sinon');
-const { expect } = require('chai');
-const configureStore = require('redux-mock-store').default;
-const { AsyncNodeStorage } = require('redux-persist-node-storage');
+import { join } from 'path';
+import { stub } from 'sinon';
+import { expect } from 'chai';
+import { dirname } from 'dirname-filename-esm';
+import configureStore from 'redux-mock-store';
+import { AsyncNodeStorage } from 'redux-persist-node-storage';
 
-const { default: persistent, remove, hydrate } = require('..');
+// https://github.com/import-js/eslint-plugin-import/issues/1649
+// eslint-disable-next-line import/no-unresolved
+import persistent, { remove, hydrate } from 'redux-persistent';
 
-const getMockStore = (selectors, storage) => configureStore([
+const getMockStore = (selectors, storage) => configureStore.default([
   persistent(selectors, { storage }),
 ]);
 
-const getAsyncStorage = () => new AsyncNodeStorage(join(__dirname, 'storage'));
+const getAsyncStorage = () => new AsyncNodeStorage(join(dirname(import.meta), 'storage'));
 
 describe('redux-persistent', () => {
   describe('localStorage', () => {

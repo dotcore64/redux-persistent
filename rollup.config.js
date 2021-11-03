@@ -1,8 +1,6 @@
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 
-import pkg from './package.json';
-
 const input = 'src/index.js';
 const plugins = [babel({ babelHelpers: 'bundled' })];
 
@@ -11,7 +9,7 @@ const name = 'ReduxPersistent';
 export default [{
   input,
   output: {
-    file: `dist/${pkg.name}.cjs.js`,
+    file: 'dist/index.cjs',
     format: 'cjs',
     sourcemap: true,
     exports: 'named',
@@ -20,7 +18,7 @@ export default [{
 }, {
   input,
   output: {
-    file: `dist/${pkg.name}.esm.js`,
+    file: 'dist/index.js',
     format: 'esm',
     sourcemap: true,
   },
@@ -28,7 +26,7 @@ export default [{
 }, {
   input,
   output: {
-    file: `dist/${pkg.name}.umd.js`,
+    file: 'dist/index.umd.js',
     format: 'umd',
     name,
     exports: 'named',
