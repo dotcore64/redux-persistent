@@ -2,13 +2,13 @@
   "name": "redux-persistent",
   "version": "2.1.0",
   "description": "Redux middleware for persisting and hydrating state",
-  "main": "dist/redux-persistent.cjs.js",
-  "module": "dist/redux-persistent.esm.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/redux-persistent.cjs.js",
-      "umd": "./dist/umd/index.js"
+      "require": "./dist/index.cjs",
+      "umd": "./dist/index.umd.js"
     }
   },
   "type": "module",
