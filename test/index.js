@@ -1,4 +1,6 @@
 import { join } from 'path';
+import { createRequire } from 'module';
+
 import { stub } from 'sinon';
 import { expect } from 'chai';
 import { dirname } from 'dirname-filename-esm';
@@ -201,6 +203,16 @@ describe('redux-persistent', () => {
         type: 'hydrate',
         value: { key: 'val' },
       }]);
+    });
+  });
+
+  describe('cjs', () => {
+    it('should require cjs module', () => {
+      const require = createRequire(import.meta.url);
+      const cjs = require('..');
+      expect(cjs.default).to.be.a('function');
+      expect(cjs.hydrate).to.be.a('function');
+      expect(cjs.remove).to.be.a('function');
     });
   });
 });

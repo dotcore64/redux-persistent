@@ -18,7 +18,7 @@ const mapObject = (mapper, obj) => {
 
 let hydrating = false;
 
-const persistent = (
+export default (
   selectors = {},
   { storage = localStorage } = {},
 ) => ({ dispatch, getState }) => (next) => (action) => {
@@ -69,5 +69,3 @@ const persistent = (
     }),
   );
 };
-
-export default persistent;
