@@ -9,7 +9,8 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "umd": "./dist/index.umd.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "type": "module",
   "scripts": {
