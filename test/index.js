@@ -1,5 +1,5 @@
-import { join } from 'path';
-import { createRequire } from 'module';
+import { join } from 'node:path';
+import { createRequire } from 'node:module';
 
 import { stub } from 'sinon';
 import { expect } from 'chai';
@@ -8,7 +8,7 @@ import configureStore from 'redux-mock-store';
 import { AsyncNodeStorage } from 'redux-persist-node-storage';
 
 // https://github.com/import-js/eslint-plugin-import/issues/1649
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-unresolved,n/no-missing-import
 import persistent, { remove, hydrate } from 'redux-persistent';
 
 const getMockStore = (selectors, storage) => configureStore.default([
@@ -129,7 +129,7 @@ describe('redux-persistent', () => {
     it('should create with empty selectors', async () => {
       localStorage.setItem('foo', 'myvalue');
 
-      const mockStore = getMockStore(undefined);
+      const mockStore = getMockStore();
 
       const store = mockStore({});
       store.dispatch({ type: 'myaction' });

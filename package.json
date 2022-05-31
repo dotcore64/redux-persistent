@@ -2,6 +2,7 @@
   "name": "redux-persistent",
   "version": "2.1.1",
   "description": "Redux middleware for persisting and hydrating state",
+  "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "exports": {
@@ -12,7 +13,9 @@
     },
     "./package.json": "./package.json"
   },
-  "type": "module",
+  "engines": {
+    "node": ">=14.0"
+  },
   "scripts": {
     "lint": "eslint --cache .",
     "test": "mocha",
@@ -50,6 +53,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-mocha": "^10.0.5",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-unicorn": "^42.0.0",
     "mocha": "^10.0.0",
     "mock-local-storage": "^1.1.21",
     "redux": "^4.2.0",
