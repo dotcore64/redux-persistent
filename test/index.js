@@ -1,5 +1,4 @@
 import { join } from 'node:path';
-import { createRequire } from 'node:module';
 
 import { stub } from 'sinon';
 import { expect } from 'chai';
@@ -203,16 +202,6 @@ describe('redux-persistent', () => {
         type: 'hydrate',
         value: { key: 'val' },
       }]);
-    });
-  });
-
-  describe('cjs', () => {
-    it('should require cjs module', () => {
-      const require = createRequire(import.meta.url);
-      const cjs = require('..');
-      expect(cjs.default).to.be.a('function');
-      expect(cjs.hydrate).to.be.a('function');
-      expect(cjs.remove).to.be.a('function');
     });
   });
 });
