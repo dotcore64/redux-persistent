@@ -3,8 +3,6 @@
 [![Build Status][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coverage Status][coveralls-badge]][coveralls]
-[![Dependency Status][dependency-status-badge]][dependency-status]
-[![devDependency Status][dev-dependency-status-badge]][dev-dependency-status]
 
 > Meant as an alternative to [redux-persist](https://github.com/rt2zz/redux-persist), providing a selector based API, while remaining compatible with its persistors ecosystem.
 
@@ -106,9 +104,3 @@ See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 
 [coveralls-badge]: https://img.shields.io/coveralls/dotcore64/redux-persistent/master.svg?style=flat-square
 [coveralls]: https://coveralls.io/r/dotcore64/redux-persistent
-
-[dependency-status-badge]: https://david-dm.org/dotcore64/redux-persistent.svg?style=flat-square
-[dependency-status]: https://david-dm.org/dotcore64/redux-persistent
-
-[dev-dependency-status-badge]: https://david-dm.org/dotcore64/redux-persistent/dev-status.svg?style=flat-square
-[dev-dependency-status]: https://david-dm.org/dotcore64/redux-persistent#info=devDependencies
