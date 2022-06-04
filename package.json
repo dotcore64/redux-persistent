@@ -1,6 +1,6 @@
 {
   "name": "redux-persistent",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "Redux middleware for persisting and hydrating state",
   "type": "module",
   "exports": {
