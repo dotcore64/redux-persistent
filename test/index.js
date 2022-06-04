@@ -7,7 +7,7 @@ import configureStore from 'redux-mock-store';
 import { AsyncNodeStorage } from 'redux-persist-node-storage';
 
 // https://github.com/import-js/eslint-plugin-import/issues/1649
-// eslint-disable-next-line import/no-unresolved,n/no-missing-import
+// eslint-disable-next-line import/no-unresolved,n/no-extraneous-import
 import persistent, { remove, hydrate } from 'redux-persistent';
 
 const getMockStore = (selectors, storage) => configureStore.default([

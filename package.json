@@ -3,9 +3,8 @@
   "version": "2.1.1",
   "description": "Redux middleware for persisting and hydrating state",
   "type": "module",
-  "main": "dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./index.js",
     "./package.json": "./package.json"
   },
   "engines": {
@@ -14,12 +13,10 @@
   "scripts": {
     "lint": "eslint --cache .",
     "test": "mocha",
-    "cover": "c8 npm test",
-    "build": "babel src -s -d dist",
-    "prepare": "npm run build"
+    "cover": "c8 npm test"
   },
   "files": [
-    "dist"
+    "index.js"
   ],
   "repository": {
     "type": "git",
@@ -38,9 +35,6 @@
   },
   "homepage": "https://github.com/dotcore64/redux-persistent#readme",
   "devDependencies": {
-    "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.2",
-    "@babel/preset-env": "^7.18.2",
     "c8": "^7.11.3",
     "chai": "^4.3.6",
     "dirname-filename-esm": "^1.1.1",
