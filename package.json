@@ -45,7 +45,7 @@
     "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-unicorn": "^44.0.0",
-    "mocha": "^10.0.0",
+    "mocha": "^10.1.0",
     "mock-local-storage": "^1.1.23",
     "redux": "^4.2.0",
     "redux-mock-store": "^1.5.4",
