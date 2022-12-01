@@ -61,9 +61,9 @@ export default (
       const { selector } = selectors[key];
       const value = selector(state);
 
-      return (value !== prevValues[key])
-        ? storage.setItem(key, value)
-        : undefined;
+      return (value === prevValues[key])
+        ? undefined
+        : storage.setItem(key, value);
     }),
   );
 };
