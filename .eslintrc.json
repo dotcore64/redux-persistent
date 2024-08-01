@@ -19,6 +19,10 @@
     "unicorn/import-style": 0,
     "unicorn/no-anonymous-default-export": 0,
     "unicorn/no-null": 0,
+    "n/no-unsupported-features/node-builtins": [
+      "error",
+      { "ignores": ["localStorage"] }
+    ],
     "@eslint-community/eslint-comments/no-unused-disable": "error"
   },
   "overrides": [
