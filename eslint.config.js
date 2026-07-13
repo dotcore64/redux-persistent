@@ -4,6 +4,7 @@ import mocha from "eslint-plugin-mocha";
 import imprt from "eslint-plugin-import";
 import unicorn from "eslint-plugin-unicorn";
 import comments from "@eslint-community/eslint-plugin-eslint-comments/configs";
+import prettier from "eslint-plugin-prettier/recommended";
 import globals from "globals";
 
 const testFiles = ["test/{,**/}*.js"];
@@ -14,6 +15,7 @@ export default [
   comments.recommended,
   unicorn.configs.recommended,
   imprt.flatConfigs.recommended,
+  prettier,
   {
     languageOptions: {
       sourceType: "module",
@@ -31,9 +33,9 @@ export default [
       "unicorn/no-null": 0,
       "n/no-unsupported-features/node-builtins": [
         "error",
-        { "ignores": ["localStorage"] }
+        { ignores: ["localStorage"] },
       ],
-      "@eslint-community/eslint-comments/no-unused-disable": "error"
+      "@eslint-community/eslint-comments/no-unused-disable": "error",
     },
   },
   {
