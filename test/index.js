@@ -2,7 +2,6 @@ import { join } from "node:path";
 
 import { stub } from "sinon";
 import { expect } from "chai";
-import { dirname } from "dirname-filename-esm";
 import configureStore from "redux-mock-store"; // eslint-disable-line import/no-named-as-default
 import { AsyncNodeStorage } from "redux-persist-node-storage";
 
@@ -14,7 +13,8 @@ const getMockStore = (selectors, storage) =>
   configureStore.default([persistent(selectors, { storage })]);
 
 const getAsyncStorage = () =>
-  new AsyncNodeStorage(join(dirname(import.meta), "storage"));
+  // eslint-disable-next-line n/no-unsupported-features/node-builtins
+  new AsyncNodeStorage(join(import.meta.dirname, "storage"));
 
 describe("redux-persistent", () => {
   describe("localStorage", () => {
