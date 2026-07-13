@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { stub } from 'sinon';
 import { expect } from 'chai';
 import { dirname } from 'dirname-filename-esm';
-import configureStore from 'redux-mock-store';
+import configureStore from 'redux-mock-store'; // eslint-disable-line import/no-named-as-default
 import { AsyncNodeStorage } from 'redux-persist-node-storage';
 
 // https://github.com/import-js/eslint-plugin-import/issues/1649
