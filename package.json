@@ -53,6 +53,6 @@
     "redux": "^5.0.1",
     "redux-mock-store": "^1.5.5",
     "redux-persist-node-storage": "^2.0.0",
-    "sinon": "^22.0.0"
+    "sinon": "^22.1.0"
   }
 }
